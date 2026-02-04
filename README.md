@@ -8,18 +8,43 @@ O projeto navega pela API Publica disponibilizada no Desafio.
 desde ja agredeço o tempo e atençao dedicados a visualização da minha solução. Abraços!!
 
 # Execução do projeto:
-Crie um Ambiente Virtual com python -m:
+📦 Instalação e Uso com Poetry
+Este projeto utiliza o Poetry para gerenciamento de dependências e ambientes virtuais. Siga os passos abaixo para configurar o projeto:
 
-    python3 -m venv venv
+1. Instalar o Poetry
+Caso ainda não tenha o Poetry instalado, execute o comando correspondente ao seu sistema:
 
-Acesse o Ambiente Virtual:
+Linux / macOS / Windows (WSL):
 
-    WINDOWS CMD -> venv\Scripts\activate    
-    lINUX -> source venv/bin/activate    
+    curl -sSL https://install.python-poetry.org | python3 -
 
-Instale as dependencias do projeto contidas no arquivo "requirements.txt"
+Windows (PowerShell):
 
-    pip install -r requirements.txt
+    (Invoke-WebRequest -https://install.python-poetry.org -UseBasicParsing).Content | py -
+
+2. Configurar o Projeto
+Navegue até a pasta raiz do projeto e instale todas as dependências (o Poetry criará o ambiente virtual automaticamente):
+    
+        poetry install
+
+3. Executar o Projeto
+Existem duas formas de rodar o projeto usando o Poetry:
+
+Opção A: Execução Direta (Recomendado) Use o comando run para executar o script sem precisar "ativar" o ambiente manualmente:
+
+    poetry run python src/app/main.py
+    
+Opção B: Entrar no Ambiente Virtual Se preferir trabalhar dentro do ambiente (como se fosse um source venv/activate):
+
+    poetry shell
+    python src/app/main.py
+
+Por que usar o Poetry neste projeto?
+Determinismo: O arquivo poetry.lock garante que todos os desenvolvedores usem exatamente as mesmas versões das bibliotecas (Pandas, BeautifulSoup, etc).
+
+Isolamento: Ele evita conflitos entre as dependências deste crawler e outros projetos Python na sua máquina.
+
+Limpeza: Facilita a remoção de pacotes desnecessários e mantém o pyproject.toml muito mais legível que um requirements.txt gigante.
 
 Para executar o projeto por completo sem nenhum tipo de erro, peço que por favor, inicie o arquivo na **main.py** localizado na pasta "src/app", 
 rode o arquivo via terminal dentro do diretorio raiz do Projeto.
