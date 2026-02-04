@@ -9,6 +9,7 @@ desde ja agredeço o tempo e atençao dedicados a visualização da minha soluç
 
 # Execução do projeto:
 Crie um Ambiente Virtual com python -m:
+
     python3 -m venv venv
 
 Acesse o Ambiente Virtual:
