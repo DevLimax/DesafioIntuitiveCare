@@ -8,7 +8,20 @@ O projeto navega pela API Publica disponibilizada no Desafio.
 desde ja agredeço o tempo e atençao dedicados a visualização da minha solução. Abraços!!
 
 # Execução do projeto:
-    Para executar o projeto por completo sem nenhum tipo de erro, peço que por favor, inicie o arquivo na **main.py** localizado na pasta "src/app", rode o arquivo via terminal dentro do diretorio raiz do Projeto.
+Crie um Ambiente Virtual com python -m:
+    python3 -m venv venv
+
+Acesse o Ambiente Virtual:
+
+    WINDOWS CMD -> venv\Scripts\activate    
+    lINUX -> source venv/bin/activate    
+
+Instale as dependencias do projeto contidas no arquivo "requirements.txt"
+
+    pip install -r requirements.txt
+
+Para executar o projeto por completo sem nenhum tipo de erro, peço que por favor, inicie o arquivo na **main.py** localizado na pasta "src/app", 
+rode o arquivo via terminal dentro do diretorio raiz do Projeto.
 
 ## 📁 Estrutura de Pastas de Dados
 O fluxo de dados segue este caminho dentro do projeto:
